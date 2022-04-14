@@ -1,5 +1,5 @@
 {
-    "name": "codelabs/seo-title",
+    "name": "murdercode/seo-title",
     "description": "A Laravel Nova field.",
     "keywords": [
         "laravel",
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Codelabs\\SeoTitle\\": "src/"
+            "Murdercode\\SeoTitle\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Codelabs\\SeoTitle\\FieldServiceProvider"
+                "Murdercode\\SeoTitle\\FieldServiceProvider"
             ]
         }
     },

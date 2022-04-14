@@ -1,6 +1,6 @@
 <?php
 
-namespace Codelabs\SeoTitle;
+namespace Murdercode\SeoTitle;
 
 use Laravel\Nova\Fields\Field;
 
@@ -20,7 +20,7 @@ class SeoTitle extends Field
      * @param int $max
      * @return $this
      */
-    public function rangeLength(int $min = 30, int $max = 60) : self
+    public function rangeLength(int $min = 30, int $max = 60): self
     {
         return $this->withMeta([
             'min' => $min,

@@ -1,6 +1,6 @@
 <?php
 
-namespace Codelabs\SeoTitle;
+namespace Murdercode\SeoTitle;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
@@ -16,8 +16,8 @@ class FieldServiceProvider extends ServiceProvider
     public function boot()
     {
         Nova::serving(function (ServingNova $event) {
-            Nova::script('seo-title', __DIR__.'/../dist/js/field.js');
-            Nova::style('seo-title', __DIR__.'/../dist/css/field.css');
+            Nova::script('seo-title', __DIR__ . '/../dist/js/field.js');
+            Nova::style('seo-title', __DIR__ . '/../dist/css/field.css');
         });
     }
 
