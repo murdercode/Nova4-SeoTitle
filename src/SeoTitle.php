@@ -27,4 +27,15 @@ class SeoTitle extends Field
             'max' => $max,
         ]);
     }
+
+    /**
+     * Hide the SEO icon
+     * @return $this
+     */
+    public function hideIcon(): self
+    {
+        return $this->withMeta([
+            'hideIcon' => false,
+        ]);
+    }
 }
