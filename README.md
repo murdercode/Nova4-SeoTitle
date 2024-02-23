@@ -21,6 +21,7 @@ public function fields(NovaRequest $request)
 {
   SeoTitle::make(__('Title'), 'title')
         ->rangeLength(30, 60)
+        ->hideIcon() // For hide the SEO icon
         ->rules('required', 'max:255', 'min:3');
 }
 ```
